@@ -1,0 +1,219 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+   
+   
+      padding: 12px 40px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 20px;
+      position: sticky;
+      top: 0;
+    
+
+}
+.logo a{
+      font-size: 36px;
+      font-weight: 700;
+      color: #222;
+      text-decoration: none;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.logo:hover{
+    transform: scale(1.2);
+    transition: 2s;
+}
+.sign img{
+    border-radius: 50%;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.navdiv li{
+    list-style: none;
+    display: inline-block;
+
+}
+.navdiv li a{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+
+}
+
+
+  #search {
+      padding: 8px 14px;
+      border: 1px  ;
+      border-radius: 20px;
+      outline: none;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(5px);
+    }
+     #search:focus {
+      border-color: #0077ff;
+      box-shadow: 0 0 8px rgba(0,119,255,0.3);
+    }
+     ul li a:hover {
+      color: #0077ff;
+    }
+    .sign img:hover {
+      transform: scale(1.5);
+      transition: 1s;
+      box-shadow: 0 0 10px rgba(0,119,255,0.5);
+    }
+     ul li a:hover::after {
+      width: 100%;
+    }
+  
+.header {
+  min-height: 100vh;
+  width: 100%;
+  margin:px;
+  padding: 20px;
+
+  background: 
+    linear-gradient(rgba(127, 121, 169, 0.65), rgba(9,0,77,0.65)),
+    url("img/istockphoto-1990444472-612x612.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.arrival{
+    margin-top: 110px;
+    margin-left: 200px;
+}
+
+.arrival h1{
+    font-size: 50px;
+    color: black;
+    font-weight: bolder;     
+}
+.arrival h3{
+    font-size:25px ;
+    color: rgb(0, 0, 0);
+}
+.discover-btn {
+    margin-top: 30px;
+  background: linear-gradient(135deg, #6C63FF, #20c997);
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discover-btn::before {
+  content: ""; /*::before er jonno content must dite hobe*/
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+ 
+}
+
+.discover-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.discover-btn:hover::before {
+  left: 125%;
+  transition: left 0.7s ease;
+}
+.offer{
+    
+    height: 150px;
+    width: 300px;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 90px;
+    margin-bottom: 50px;
+    padding: 12px 40px;
+    backdrop-filter:blur(10px); /*jekono background ke blur korar jonno*/
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+
+}
+
+.offer h2 {
+  
+    color: #fff;
+}
+.offer p {
+    color: #fff;
+}
+.discount{
+    text-decoration: line-through black; /*line diye ektu decoration*/
+}
+.arrow-btn {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background: #000;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition:  0.3s ease;  /* transition smooth kore*/
+  margin-top: 10px;
+}
+
+.arrow-btn:hover {
+  transform: translateX(10px); /* Slide to the right */
+  background: #444;           /* Optional hover background */
+}
+.body-h1{
+    text-align: center;
+    margin-top: 30px;
+}
+.range{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+   padding: 10px;
+   
+}
+.range img{
+    padding: px;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+}
+.living:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+ 
+}
+.dinning:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+ 
+}
+.bedroom:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+ 
+}
