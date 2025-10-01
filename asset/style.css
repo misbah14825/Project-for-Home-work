@@ -199,7 +199,7 @@
 .range img{
     padding: px;
     margin: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
     border-radius: 20px;
 }
 .living:hover{
@@ -216,4 +216,78 @@
     transform: scale(1.05);
     transition: 0.5s;
  
+}
+.card{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+
+
+}
+.card img{
+  width: 250px;
+  display: block;
+}
+.card h5{
+  font-size: 20px;
+  color: #333;
+}
+/* For tablets and smaller (≤ 992px wide) */
+@media (max-width: 992px) {
+  .navdiv {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navdiv ul {
+    padding: 0;
+  }
+
+  .navdiv li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .arrival h1 {
+    font-size: 36px;
+  }
+
+  .arrival h3 {
+    font-size: 20px;
+  }
+}
+
+/* For mobile phones (≤ 768px wide) */
+@media (max-width: 768px) {
+  .range {
+    flex-direction: column;   /* stack cards vertically */
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    width: 100%;       /* make image full width */
+    height: auto;
+  }
+
+  .arrival h1 {
+    font-size: 28px;
+  }
+
+  .arrival h3 {
+    font-size: 18px;
+  }
+
+  .discover-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .offer {
+    position: static;   /* remove fixed positioning */
+    margin: 20px auto;
+    width: 90%;
+  }
 }
